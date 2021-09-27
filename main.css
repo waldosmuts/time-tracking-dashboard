@@ -1,0 +1,300 @@
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  background-color: #0f1424;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 330px;
+      grid-template-columns: 330px;
+  row-gap: 25px;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .card, main .inner-card {
+  border-radius: 15px;
+}
+
+main .reports {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 25px;
+}
+
+main .card {
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+main .card:nth-of-type(1) {
+  background: no-repeat right 20px top -5px url(./images/icon-work.svg), #ff8c66;
+}
+
+main .card:nth-of-type(2) {
+  background: no-repeat right 20px top -5px url(./images/icon-play.svg), #56c2e6;
+}
+
+main .card:nth-of-type(3) {
+  background: no-repeat right 20px top -5px url(./images/icon-study.svg), #ff5c7c;
+}
+
+main .card:nth-of-type(4) {
+  background: no-repeat right 20px top -5px url(./images/icon-exercise.svg), #4acf81;
+}
+
+main .card:nth-of-type(5) {
+  background: no-repeat right 20px top -5px url(./images/icon-social.svg), #7536d3;
+}
+
+main .card:nth-of-type(6) {
+  background: no-repeat right 20px top -5px url(./images/icon-self-care.svg), #f1c65b;
+}
+
+main .inner-card {
+  background-color: #1c1f4a;
+  padding: 20px 20px 30px 20px;
+}
+
+main .inner-card .card-top, main .inner-card .card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .inner-card .card-top {
+  margin-bottom: 5px;
+}
+
+main .inner-card .card-top .card-title {
+  font-weight: 500;
+  color: white;
+}
+
+main .inner-card .card-bottom .hours {
+  color: white;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+main .inner-card .card-bottom .hours-history {
+  color: #bdc1ff;
+  font-size: 15px;
+}
+
+main #card-header {
+  background-color: #1c1f4a;
+  padding: 0;
+}
+
+main #card-header .inner-card {
+  background-color: #5847eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+main #card-header .inner-card img {
+  height: 60px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+main #card-header .inner-card .header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+}
+
+main #card-header .inner-card .header-text p {
+  color: #bdc1ff;
+  font-weight: 300;
+  margin: 0;
+  font-size: 16px;
+}
+
+main #card-header .inner-card .header-text h2 {
+  color: #bdc1ff;
+  font-weight: 300;
+  margin: 0;
+  font-size: 25px;
+}
+
+main #card-header .report-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px 0 20px 15px;
+}
+
+main #card-header .report-buttons button {
+  background-color: transparent;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: #6f76c8;
+}
+
+main #card-header .report-buttons .selected {
+  color: #bdc1ff;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 30px 0;
+  color: #bdc1ff;
+  position: absolute;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+    -ms-grid-columns: 250px 750px;
+        grid-template-columns: 250px 750px;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  main .reports {
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+    -ms-grid-columns: 250px 250px 250px;
+        grid-template-columns: 250px 250px 250px;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  main .reports .inner-card:hover {
+    background-color: #6f76c8;
+    cursor: pointer;
+  }
+  main #card-header {
+    height: 100%;
+  }
+  main #card-header .inner-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px 30px 75px 30px;
+  }
+  main #card-header .inner-card img {
+    height: 70px;
+  }
+  main #card-header .inner-card .header-text {
+    margin: 30px 0 0 0;
+  }
+  main #card-header .inner-card .header-text p {
+    font-size: 14px;
+  }
+  main #card-header .inner-card .header-text h2 {
+    font-size: 36px;
+  }
+  main #card-header .report-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 30px;
+  }
+  main #card-header .report-buttons button {
+    margin-bottom: 15px;
+    padding: 0;
+  }
+  main #card-header .report-buttons button:hover {
+    cursor: pointer;
+    color: #bdc1ff;
+  }
+  main #card-header .report-buttons button:last-of-type {
+    margin-bottom: 0;
+  }
+  main .card {
+    min-width: 0;
+  }
+  main .card-top {
+    margin-bottom: 20px !important;
+  }
+  main .card-top img:hover {
+    cursor: pointer;
+  }
+  main .card-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  main .card-bottom .hours {
+    font-size: 55px !important;
+    margin-bottom: 5px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
